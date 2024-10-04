@@ -11,8 +11,26 @@
 </head>
 <body>
 
+  <!-- inicio offcanvas -->
+  <div class="offcanvas offcanvas-start" id="demo2">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title">Redes sociales</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p> <a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+      <p> <a href="https://www.instagram.com/" target="_blank">instagram</a></p>
+      <p> <a href="https://x.com/" target="_blank">X</a></p>
+      <p> <a href="https://co.pinterest.com/" target="_blank">pinterest</a></p>
+      <button class="btn btn-secondary" type="button">A Button</button>
+    </div>
+  </div>
+  
+  
+  <!-- Fin offcanvas -->
+
   <!-- inicio NavBar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" style=" background-image: linear-gradient(red, rgb(0, 0, 0))";>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: rgb(255, 0, 0);";>
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Menu Principal</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,20 +39,20 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">contacto</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              sobre Nosotros
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Mision</a></li>
+              <li><a class="dropdown-item" href="#">Vision</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Politicas</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -109,7 +127,7 @@
         <img src="img/Hora_de_Aventura.jpg" alt="Chicago" class="d-block" style="width:100%">
       </div>
       
-    
+      
     <!-- Left and right controls/icons -->
     <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
       <span class="carousel-control-prev-icon"></span>
@@ -118,18 +136,53 @@
       <span class="carousel-control-next-icon"></span>
     </button>
   </div>
-  
   <div class="container-fluid mt-3">
     <h3>Carousel Example</h3>
     <p>The following example shows how to create a basic carousel with indicators and controls.</p>
   </div>
-  
+
+    <!-- Fin carusel -->
+
+
+ <!-- The Modal -->
+ <div class="modal" id="Informacion">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title" style="color: black;"> Informacion Personal</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body" style="color: black;">
+        <p>Juan David Ortiz Vera</p>
+        <p>ing sistemas</p>
+        <p>especialista en diseño</p>
+        
+        
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
 
     </div>
+  </div>
+</div>
 
+  <!-- Fin modal -->
+    </div>
+    
     <div class="container">
-       
+      
         <button type="button" class="btn btn-danger">eliminar</button>
+      
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo2">
+          Ver Offcanvas
+        </button>
         <h2>container</h2>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae facilis molestiae, ipsum voluptatum explicabo odit reprehenderit! Modi nesciunt vitae eos laborum, velit sapiente repudiandae. Atque molestias quo itaque nostrum nisi eos, delectus eligendi dolore ut quidem minus dignissimos laudantium, perferendis eveniet deleniti officia alias sunt veniam consectetur quaerat dolorum laborum quam ullam. Labore unde maxime ad, impedit, quas placeat facilis, nesciunt beatae sunt laudantium aperiam dolor voluptatum ipsa a id! Laboriosam quos ullam pariatur officia itaque facere et similique culpa. Dolor aut quia deserunt! Accusantium cupiditate omnis repellat culpa ea esse amet. Esse explicabo temporibus perspiciatis. Perspiciatis beatae corrupti enim nemo in dolor minima consectetur dolorem earum, minus vero perferendis distinctio assumenda molestiae. Beatae ea tempora dolores maiores nesciunt, omnis laboriosam iure id! Nam blanditiis esse possimus assumenda eligendi, nulla dolorum at ab, aliquid voluptas culpa nobis temporibus, odio inventore ex aspernatur explicabo voluptatum voluptate ad maxime ut! Ut, accusamus itaque, fuga ipsa fugiat nihil tenetur placeat quo sed inventore modi perspiciatis laboriosam et quod molestiae. Mollitia facere sapiente atque.</p>
 
@@ -138,6 +191,21 @@
     <div class="container-fluid">
         <button type="button" class="btn btn-primary">agregar</button>
         <h2>container fluid</h2>
+
+        <!-- inicio Card -->
+        <div class="container mt-3">
+          <h2>Card Image</h2>
+          <p>Image at the top (card-img-top):</p>
+          <div class="card" style="width:300px">
+            <img class="card-img-top" src="../Prueba_Boostraps/img/Perfil2.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Juan Ortiz</h4>
+              <p class="card-text">Ingeniero de sistemas</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Informacion">See Profile</a>
+            </div>
+          </div>
+          <br>
+        <!-- Fin Card -->
         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex recusandae id dolor laudantium, natus inventore voluptates, excepturi incidunt quos, facere illum dignissimos autem? Blanditiis possimus laboriosam fugiat, vel quaerat asperiores incidunt ut, aspernatur pariatur a repellat quae veniam nesciunt reiciendis nihil maiores eaque ab ad culpa perferendis architecto! Necessitatibus enim dolores repudiandae cumque porro. Cumque explicabo fugit excepturi beatae quos, eum et exercitationem eligendi perspiciatis tenetur ea nam recusandae quaerat.</p></div>
         
         <h2>Dividir nuestra pagina web</h2>
